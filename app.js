@@ -69,9 +69,10 @@ const checkWin = (who) => {
       field.removeEventListener("click", listener);
       linelWin(idx, index);
       newGame();
+      return
     }
   });
-  if (move === 8) {
+  if (move === 9 && !winner) {
     winner = "Ничья";
     newGame();
   }
@@ -79,14 +80,13 @@ const checkWin = (who) => {
 
 const linelWin = (x, y) => {
   span = document.querySelector("span");
-  let marg = 50;
+  let marg = 100;
+  marg += 200 * y;
   if (x === 0) {
-    span.classList.add("winH");
-    marg += 100 * y;
+    span.classList.add("winH");   
     span.style.top = `${marg}px`;
   } else if (x === 1) {
     span.classList.add("winV");
-    marg += 100 * y;
     span.style.left = `${marg}px`;
   } else if (x === 2 && y === 0) {
     span.classList.add("winDM");

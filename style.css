@@ -24,29 +24,29 @@ body {
 }
 
 .field_wrapper {
-  width: 302px;
-  height: 302px;
+  width: 602px;
+  height: 602px;
   position: relative;
 }
 
 .field {
   display: flex;
   flex-wrap: wrap;
-  width: 302px;
-  height: 302px;
+  width: 602px;
+  height: 602px;
   border-radius: 50px;
   overflow: hidden;
   border: solid 1px wheat;
 }
 
 .cell {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border: solid 1px wheat;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 48px;
+  font-size: 96px;
   color: tomato;
   background-color: turquoise;
 }
@@ -66,7 +66,7 @@ body {
 .winH {
   display: block;
   position: absolute;
-  width: 360px;
+  width: 660px;
   height: 6px;
   left: -30px;
   border-radius: 6px;
@@ -76,7 +76,7 @@ body {
   display: block;
   position: absolute;
   width: 6px;
-  height: 360px;
+  height: 660px;
   top: -30px;
   border-radius: 6px;
   background-color: tomato;
@@ -85,7 +85,7 @@ body {
 .winDM {
   display: block;
   position: absolute;
-  width: 450px;
+  width: 870px;
   height: 6px;
   left: -10px;
   top: -10px;
@@ -98,7 +98,7 @@ body {
 .winDS {
   display: block;
   position: absolute;
-  width: 450px;
+  width: 870px;
   height: 6px;
   right: -10px;
   top: -10px;
